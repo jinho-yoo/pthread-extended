@@ -1,0 +1,2 @@
+Minnie Yoo, perm: 9579855
+lock() and unlock() block and unblock SIGALRM, which means that there will be no SIG handler because it's a function, so that other code could be executed in between lock() and unlock() to make multiple threading possible.
